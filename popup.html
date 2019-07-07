@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Rise Media Launcher</title>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open_Sans">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<style>
+		html, body {
+			font-family: 'Open Sans', sans-serif;
+			font-size: 14px;
+			min-height: 180px;
+			padding: 0;
+			width: 384px;
+			padding-right: 15px;
+		}
+
+		h1 {
+			font-family: Montserrat,sans-serif;
+			font-size: 22px;
+			font-weight: 400;
+			margin: 0;
+			color: #2f5876;
+
+		}
+
+		a:link, a:visited {
+			color: #000;
+			outline: 0;
+			text-decoration: none;
+		}
+
+		img {
+			width: 90px;
+		}
+
+		.modal-header {
+			align-items: center;
+		}
+
+		.modal-content {
+			padding: 5px 20px;
+		    background-color: #fbb03b;
+			color: #fff;
+		}
+
+		.modal-icons {
+			height: 50px;
+			width: 100%;
+		}
+
+		.logo {
+			padding: 16px;
+		}
+
+		.logo-icon {
+			vertical-align: text-bottom;
+			margin-right: 12px;
+		}
+
+		.version {
+			color: #444;
+			font-size: 18px;
+		}
+		.flex-container {
+			display: flex;
+			justify-content: space-between;
+			padding: 10px 20px;
+		}
+
+		.flex {
+			opacity: 1;
+			transition: opacity 0.2s ease;
+			justify-content: center;
+		}
+
+		.flex:hover {
+			opacity: 0.4;
+		}
+		
+		.flex .fa {
+			font-size: 30px;
+			color: #fbb03b;
+		}
+		.chrome_action {
+			cursor: pointer;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="modal-header">
+		<h1 class="logo">
+			<img src="images/rise-logo.png" alt="Rise Launcher" class="logo-icon"> Rise Launcher <span class="version">(1.0)</span>
+		</h1>
+	</div>
+	<div class="modal-content">
+		<p>Mark Hubspot Template</p>
+	</div>
+	<div class="modal-icons" id="modal-icons">
+		<div class="flex-container">
+			<div class="flex">
+				<a class="chrome_action" id="markHeader" data-section="header">
+					Header
+				</a>
+			</div>
+			<div class="flex">
+				<a class="chrome_action" id="markBody" data-section="body">
+					Body
+				</a>
+			</div>
+			<div class="flex">
+				<a class="chrome_action" id="markFooter" data-section="footer">
+					Footer
+				</a>
+			</div>
+			<div class="flex">
+				<a class="chrome_action" id="markAll" data-section="all">
+					Mark All 
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="modal-body" id="modalbody"></div>
+	
+	
+	<script type="text/javascript" src="js/jquery-2.1.3.js"></script>
+	<script type="text/javascript" src="js/popup.js"></script>
+
+</body>
+</html>
