@@ -1,2 +1,2 @@
 # hubspotmarker
-hubspot google chrom extension
+hubspot google chrome extension
